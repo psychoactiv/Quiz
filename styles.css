@@ -10,18 +10,26 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #112a46;
+  --secondary-color: #acc8e5;
+  --shadow-color: #18406d;
+  --white: white;
+  --grey: grey;
+}
+
 html {
   font-size: 62.5%;
 }
 
 body {
   height: 100vh;
-  background-color: #acc8e5;
+  background-color: var(--secondary-color);
 }
 
 .movie-geek-head {
   font-size: 4rem;
-  color: #112a46;
+  color: var(--primary-color);
   text-align: center;
   margin: 4rem 0;
   font-family: "Roboto Condensed", sans-serif;
@@ -34,8 +42,8 @@ body {
   flex-direction: column;
   row-gap: 1rem;
   border-radius: 1.5rem;
-  background-color: #112a46;
-  box-shadow: 0px 5px 10px 3px #18406d;
+  background-color: var(--primary-color);
+  box-shadow: 0px 5px 10px 3px var(--shadow-color);
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -59,7 +67,7 @@ body {
 .quiz-cat-head-txt {
   text-align: center;
   font-size: 2rem;
-  color: white;
+  color: var(--white);
   font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -69,7 +77,7 @@ body {
   padding-bottom: 1.5rem;
   text-align: center;
   font-family: "Noto Sans", sans-serif;
-  color: grey;
+  color: var(--grey);
 }
 
 .cat-box:hover {
