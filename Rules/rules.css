@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@500;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+:root {
+  --primary-color: #112a46;
+  --secondary-color: #acc8e5;
+  --shadow-color: #18406d;
+  --button-shadow: #6d8db3;
+  --white: white;
+  --grey: grey;
+  --slategrey: slategrey;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+.heading-rules {
+  text-align: center;
+  font-size: 5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--primary-color);
+}
+
+.rule-box {
+  background-color: var(--primary-color);
+  color: var(--slategrey);
+  font-size: 3rem;
+  width: 70%;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  padding-left: 4rem;
+  list-style-type: square;
+}
+
+.start-quiz-btn {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  appearance: none;
+  color: var(--slategrey);
+  padding: 0.9rem 1.5rem 1.1rem 1.5rem;
+  box-shadow: inset 0px -3px 3px 2px var(--button-shadow);
+  transition: 0.3s ease-in-out;
+  border-radius: 0.5rem;
+  font-size: 2.5rem;
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+.start-quiz-btn:active {
+  padding: 1.1rem 1.5rem 0.9rem 1.5rem;
+  box-shadow: inset 1px 3px 3px 2px var(--button-shadow);
+}
+
+.redirect-link {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 20%;
+  }
+}
+@media screen and (max-width: 170px) {
+  html {
+    font-size: 10%;
+  }
+}
