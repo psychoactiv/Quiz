@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Oswald:wght@500;700&family=Roboto+Condensed:wght@300&family=Roboto:wght@300&family=Rubik:wght@300&display=swap");
+
+:root {
+  --primary-color: #112a46;
+  --secondary-color: #acc8e5;
+  --shadow-color: #18406d;
+  --button-shadow: #6d8db3;
+  --white: white;
+  --grey: grey;
+  --slategrey: slategrey;
+  --red: red;
+  --green: green;
+  --darkslategrey: darkslategrey;
+}
+
+.quiz-answer-container li .wrong-option {
+  color: var(--darkslategrey);
+}
+.quiz-answer-container li .wrong-chosen-option {
+  color: var(--white);
+  background-color: var(--red);
+}
+.quiz-answer-container li .right-option {
+  color: var(--white);
+  background-color: var(--green);
+}
+
+.final-quiz-score {
+  padding: 1.5rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@media screen and (max-width: 750px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 20%;
+  }
+}
